@@ -1,108 +1,177 @@
-# 派遣人員管理系統
+# 派遣人員管理系統 Frontend
 
-一個現代化的派遣人員管理系統，使用 React 和 Tailwind CSS 構建。
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3.0-38B2AC.svg)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 功能特色
+一個現代化的派遣人員管理系統前端應用程式，使用 React 和 Tailwind CSS 構建，提供完整的人力資源管理功能。
 
-### 總覽儀表板
-- 人力庫統計
-- 派遣成功率監控
-- 營收追蹤
-- 技能分布圖表
-- 產業經驗分析
+## ✨ 主要功能
+
+### 🏢 **總覽儀表板**
+- 等待安排的專案一覽表
+- 即時專案狀態追蹤
+- 人力需求分析
+
+### 👥 **人員管理**
+- 完整的員工資料管理
+- 技能雷達圖分析
+- 專案經歷追蹤
+- 派遣狀態管理
+
+### 🏪 **客戶管理**
+- 客戶資訊與專案管理
+- 專案詳細資訊追蹤
+- 團隊配置管理
+- 技能需求分析
+
+### 📅 **面談管理**
+- 智慧面談安排系統
+- 客戶-專案級聯選擇
+- 面談記錄與評估
+- 進度追蹤
+
+## 🚀 快速開始
+
+### 環境需求
+- Node.js 16.0+
+- npm 或 yarn
+
+### 安裝與啟動
+
+```bash
+# 1. 克隆專案
+git clone https://github.com/hahalin/dispatch-system-frontend.git
+
+# 2. 進入專案目錄
+cd dispatch-system-frontend
+
+# 3. 安裝依賴
+npm install
+
+# 4. 啟動開發服務器
+npm start
+
+# 5. 在瀏覽器中訪問
+# http://localhost:3000
+```
+
+## 🛠️ 技術堆疊
+
+- **Frontend Framework**: React 18.2.0
+- **UI Framework**: Tailwind CSS 3.3.0
+- **Icons**: Lucide React 0.263.1
+- **Charts**: Recharts 2.8.0
+- **Build Tool**: Create React App
+
+## 📱 系統截圖
+
+### 總覽頁面
+![Overview](docs/screenshots/overview.png)
 
 ### 人員管理
-- 完整的履歷管理系統
-- 詳細的技能評估
-- 專案經歷追蹤
-- 能力雷達圖分析
-- 多專案經驗展示
+![Employee Management](docs/screenshots/employee-management.png)
 
 ### 客戶管理
-- 客戶基本資料管理
-- 多專案管理
-- 專案技能需求追蹤
-- 團隊分配管理
-- 預算與期程監控
+![Client Management](docs/screenshots/client-management.png)
 
-### 面談管理
-- 面談安排與追蹤
-- 評估結果記錄
-- 面談歷史查詢
+### 面談安排
+![Interview Scheduling](docs/screenshots/interview-scheduling.png)
 
-## 技術棧
-
-- **前端框架**: React 18
-- **樣式系統**: Tailwind CSS 3
-- **圖表庫**: Recharts
-- **圖標**: Lucide React
-- **構建工具**: Create React App
-
-## 安裝與運行
-
-1. 安裝依賴：
-```bash
-npm install
-```
-
-2. 啟動開發服務器：
-```bash
-npm start
-```
-
-3. 構建生產版本：
-```bash
-npm run build
-```
-
-## 專案結構
+## 🏗️ 專案結構
 
 ```
 src/
 ├── components/
-│   └── StaffingShowcase.js    # 主要組件
-├── App.js                     # 應用入口
-├── App.css                    # 應用樣式
-├── index.js                   # React 入口點
-└── index.css                  # 全局樣式
+│   ├── StaffingShowcase.js     # 主要組件
+│   └── InterviewManagement.js  # 面談管理組件
+├── App.js                      # 應用程式根組件
+├── index.js                    # 應用程式入口
+└── index.css                   # 全域樣式
 ```
 
-## 主要特性
+## 🎨 設計特色
 
-### 員工資料管理
-- 基於林春宏履歷設計的詳細資料結構
-- 技能分類：程式語言、前端、後端、資料庫
+- **現代化 UI**: 使用 Tailwind CSS 的現代設計語言
+- **響應式設計**: 支援桌面和移動設備
+- **直觀操作**: 清晰的導航和用戶友好的界面
+- **資料視覺化**: 使用圖表展示關鍵資料
+
+## 📊 功能亮點
+
+### 智慧面談安排
+- 客戶與專案的級聯選擇
+- 員工技能自動匹配
+- 即時專案資訊預覽
+
+### 員工技能分析
+- 雷達圖展示核心技能
+- 專案經歷詳細追蹤
 - 產業經驗統計
-- 專案經歷詳細記錄
-- 能力評估雷達圖
 
 ### 客戶專案管理
-- 多專案並行管理
-- 技能需求匹配
-- 團隊成員分配
-- 專案狀態追蹤
+- 表格式專案管理
+- 人力需求與配置對比
+- 專案進度追蹤
 
-### 數據視覺化
-- 技能分布長條圖
-- 產業經驗分布
-- 能力評估雷達圖
-- 統計儀表板
+## 📚 文檔
 
-## 瀏覽器支持
+- [快速入門指南](QUICK_START_GUIDE.md) - 詳細的系統說明與開發指南
+- [API 文檔](docs/API.md) - 後端 API 接口說明
+- [部署指南](docs/DEPLOYMENT.md) - 生產環境部署說明
 
-- Chrome (推薦)
-- Firefox
-- Safari
-- Edge
+## 🤝 貢獻指南
 
-## 開發說明
+歡迎提交 Issue 和 Pull Request！
 
-本專案使用現代 React 開發模式：
-- 函數組件與 Hooks
-- 響應式設計
-- 模組化組件結構
-- Tailwind CSS 實用程式類別
+### 開發流程
+1. Fork 本專案
+2. 創建功能分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交變更 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 開啟 Pull Request
 
-## 授權
+### 程式碼規範
+- 使用 ES6+ 語法
+- 遵循 React Hooks 規則
+- 使用 Tailwind CSS 進行樣式設計
+- 保持組件的功能單一性
 
-此專案僅供學習和展示使用。
+## 📋 開發計劃
+
+### 短期目標 (v1.1)
+- [ ] 資料持久化
+- [ ] 搜尋與篩選功能
+- [ ] 資料匯出功能
+- [ ] 員工技能匹配演算法
+
+### 長期目標 (v2.0)
+- [ ] 後端 API 整合
+- [ ] 即時通知系統
+- [ ] 移動端 App
+- [ ] 進階分析報表
+
+## 🐛 已知問題
+
+- 資料目前存儲在記憶體中，重新整理會丟失
+- 圖表在小螢幕上可能需要優化
+- 需要增加更多的表單驗證
+
+## 📄 授權
+
+本專案使用 MIT 授權 - 詳見 [LICENSE](LICENSE) 文件
+
+## 👨‍💻 作者
+
+- **開發團隊** - [hahalin](https://github.com/hahalin)
+
+## 🙏 致謝
+
+- [React](https://reactjs.org/) - UI 框架
+- [Tailwind CSS](https://tailwindcss.com/) - CSS 框架
+- [Lucide](https://lucide.dev/) - 圖標庫
+- [Recharts](https://recharts.org/) - 圖表庫
+
+---
+
+如果這個專案對您有幫助，請給我們一個 ⭐ Star！
